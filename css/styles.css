@@ -8,7 +8,7 @@ Logo Color (Spicy Blue): #47636c
 Secondary Color (Dark Green): #8db493;
  */
 
- :root {
+:root {
   --primary-color: #8aa3ad;
   --secondary-color: #e0b354;
   --background-color: #47636c;
@@ -16,16 +16,18 @@ Secondary Color (Dark Green): #8db493;
   --font-weight: 650;
 }
 
- * {
-   box-sizing: border-box;
- }
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 450;
   font-size: 13px;
+
   /* Sets the font size to 13px */
   line-height: 1.3;
+
   /* Sets the line-height to 1.3 */
 }
 
@@ -50,9 +52,10 @@ a {
 
 a:visited {
   color: var(--secondary-color);
-  }
+}
 
-a:hover, a:focus {
+a:hover,
+ a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
 }
@@ -65,17 +68,21 @@ a:active {
 button,
 .button {
   /* overwrites browser defaults */
+
   /* resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* style button */
   background-color: var(--background-color);
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   text-decoration-color: var(--text-color);
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
@@ -85,11 +92,12 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-    /* lets the mouse appear as a hand when hovering over the button */
-    cursor: pointer;
-    /* reduces the opacity of the button to 80% */
-    opacity: 0.8;
-  }
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
 
 .button__secondary {
   background-color: var(--text-color);
@@ -132,7 +140,7 @@ button:focus,
   margin-left: 15px;
 }
 
-/* Grid fallback*/
+/* Grid fallback */
 .grid__item {
   display: inline-block;
   width: 33%;
@@ -147,7 +155,7 @@ button:focus,
 .grid__item {
   background-color: var(--primary-color);
   padding: 20px;
-  width:auto;
+  width: auto;
 }
 
 .sun {
@@ -166,6 +174,7 @@ button:focus,
   grid-column: 3 / 3;
   grid-row: 1 / 3;
 }
+
 .page-footer {
   clear: both;
   display: flex;
@@ -178,15 +187,18 @@ button:focus,
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
@@ -197,6 +209,7 @@ button:focus,
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
@@ -206,19 +219,22 @@ button:focus,
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
 }
 
-  @keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-    50% {
-      fill: #fcffad;
-    }
-    100% {
-      fill: #f76414;
-    }
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
