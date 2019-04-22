@@ -22,7 +22,7 @@ Secondary Color (Dark Green): #8db493;
 
 body {
   font-family: 'Lato', sans-serif;
-  font-weight: 450;
+  font-weight: var(--font-weight);
   font-size: 13px;
 
   /* Sets the font size to 13px */
