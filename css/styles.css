@@ -34,6 +34,7 @@ body {
 h1 {
   font-size: 27px;
   font-weight: var(--font-weight);
+  font-size: 3vw;
 }
 
 h2 {
@@ -71,6 +72,7 @@ button,
 
   /* resets the border */
   border: none;
+  margin-top: 15px;
   display: inline-block;
 
   /* takes the font from the outer container */
